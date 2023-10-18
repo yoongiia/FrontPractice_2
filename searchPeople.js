@@ -5,7 +5,7 @@ function searchPeople(list, searchField, searchValue){
             const results =list.filter((people)=> people[searchField]== searchValue)
             if (results.length > 0) resolve(results)
             else reject(`За пошуком за умовою "${searchField}: ${searchValue}" не знайдено.`);
-        }, 1500);
+        }, 1700);
       });
     }
   

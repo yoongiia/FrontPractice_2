@@ -1,11 +1,10 @@
-import searchPeople from "./search.js";
+import searchPeople from "./searchPeople.js";
 import people from "./list.js";
 
 const currentYear = new Date().getFullYear();
 
-const getAgeInfo = (name, birthYear= new Date().getFullYear()) => {
-  const age = currentYear - birthYear;
-  return `Я ${name}, мені ${age} років`;
+const getAgeInfo = (name, birthYear= currentYear) => {
+  return `Я ${name}, мені ${currentYear - birthYear} років`;
 };
 
 console.log(getAgeInfo("Вася", 1990));
